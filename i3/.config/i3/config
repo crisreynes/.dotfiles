@@ -36,7 +36,7 @@ bindsym $mod+v exec --no-startup-id kitty nvim
 # Scratchpads
 bindsym $mod+Return [class="floating"] scratchpad show; move position center
 bindsym $mod+p [class="pulsemixer"] scratchpad show; move position center
-bindsym $mod+m [class="cmus"] scratchpad show; move position center
+bindsym $mod+m [class="ncspot"] scratchpad show; move position center
 
 for_window [class="floating"] floating enable
 for_window [class="floating"] resize set 1250 700
@@ -48,10 +48,10 @@ for_window [class="pulsemixer"] resize set 1050 800
 for_window [class="pulsemixer"] move scratchpad
 for_window [class="pulsemixer"] border pixel 5
 
-for_window [class="cmus"] floating enable
-for_window [class="cmus"] resize set 1100 800
-for_window [class="cmus"] move scratchpad
-for_window [class="cmus"] border pixel 2.5
+for_window [class="ncspot"] floating enable
+for_window [class="ncspot"] resize set 1100 800
+for_window [class="ncspot"] move scratchpad
+for_window [class="ncspot"] border pixel 2.5
 # SHUTDOWN SYSTEM
 bindsym $mod+Shift+x exec --no-startup-id shutdown now
 
@@ -146,6 +146,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # force apps to open in certain workspaces
 assign [class="Eclipse"] $ws1
+assign [class="Apache NetBeans IDE 18"] $ws1
 # librewolf flatpak
 assign [class="LibreWolf"] $ws2
 assign [class="firefox"] $ws2
@@ -227,10 +228,10 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 exec --no-startup-id xdg-user-dirs-update
-exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/*
+exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/current-desktop/*
 exec --no-startup-id setxkbmap -model pc105 -layout us -variant intl -option caps:swapescape
 # exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144.00
 exec --no-startup-id kitty --class pulsemixer pulsemixer
 exec --no-startup-id kitty --class floating
-exec --no-startup-id kitty --class cmus cmus
+exec --no-startup-id kitty --class ncspot flatpak run io.github.hrkfdn.ncspot -b /home/$USER/.config/ncspot
 exec_always --no-startup-id ~/scripts/scratchpads-restart.sh
