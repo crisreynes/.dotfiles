@@ -3,7 +3,7 @@
 
 set $mod Mod4
 
-font pango:JetBrainsMono Nerd Font 12.5
+font pango:JetBrainsMono Nerd Font Mono 12.5
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
