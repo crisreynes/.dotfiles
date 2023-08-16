@@ -23,6 +23,11 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Shift+Return exec kitty
 
+# brightness
+
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
 # kill focused window
 bindsym $mod+q kill
 
