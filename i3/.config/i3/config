@@ -238,5 +238,5 @@ exec --no-startup-id setxkbmap -model pc105 -layout us -variant intl -option cap
 # exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144.00
 exec --no-startup-id kitty --class pulsemixer pulsemixer
 exec --no-startup-id kitty --class floating
-exec --no-startup-id kitty --class ncspot flatpak run io.github.hrkfdn.ncspot -b /home/$USER/.config/ncspot
+exec --no-startup-id kitty --class ncspot ncspot
 exec_always --no-startup-id ~/scripts/scratchpads-restart.sh
