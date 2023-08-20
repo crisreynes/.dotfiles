@@ -1,3 +1,94 @@
+default_keybindings = false
+use_nerdfont = true
+notify = true
+flip_status_indicators = true
+hide_display_names = true
+
+[keybindings]
+# Play/pause
+"p" = "playpause"
+"Enter" = "play"
+"s" = "stop"
+
+# Track commands
+"H" = "previous"
+"L" = "next"
+"r" = "repeat"
+"z" = "shuffle"
+
+# Delete and save
+"D" = "delete"
+"S" = "save"
+
+# Seek forward/backward
+"b" = "seek -1000"
+"f" = "seek +1000"
+"B" = "seek -10000"
+"F" = "seek +10000"
+
+# Context menu
+"a" = "goto album"
+"A" = "goto artist"
+"o" = "open selected"
+"O" = "open current"
+"m" = "similar selected"
+"M" = "similar current"
+
+# Queue
+" " = "queue"
+"Ctrl+s" = "save queue"
+"C" = "clear"
+"J" = "shift down 1"
+"K" = "shift up 1"
+
+# Volume
+"-" = "voldown 1"
+"=" = "volup 1"
+"[" = "voldown 5"
+"]" = "volup 5"
+
+# Focus
+"F1" = "focus queue"
+"F2" = "focus library"
+"F3" = "focus search"
+"1" = "focus queue"
+"2" = "focus library"
+"3" = "focus search"
+
+# Movement
+"g" = "move top"
+"G" = "move bottom"
+"Left" = "move left 1"
+"Down" = "move down 1"
+"Up" = "move up 1"
+"Right" = "move right 1"
+"h" = "move left 1"
+"j" = "move down 1"
+"k" = "move up 1"
+"l" = "move right 1"
+"Ctrl+d" = "move down 5"
+"Ctrl+u" = "move up 5"
+"Ctrl+f" = "move down 10"
+"Ctrl+b" = "move up 10"
+"." = "move playing"
+"Esc" = "back"
+
+# Share
+"y" = "share selected"
+"Y" = "share current"
+"i" = "insert"
+
+# Search
+"n" = "jumpnext"
+"N" = "jumpprevious"
+
+# General
+"Ctrl+l" = "redraw"
+"?" = "help"
+"U" = "update"
+"Q" = "quit"
+
+# Dracula theme | https://github.com/dracula/ncspot
 [theme]
 background = "default"
 primary = "#F8F8F2"
