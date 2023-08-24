@@ -54,7 +54,7 @@ for_window [class="pulsemixer"] move scratchpad
 for_window [class="pulsemixer"] border pixel 2.5
 
 for_window [class="ncspot"] floating enable
-for_window [class="ncspot"] resize set 75 ppt 75 ppt
+for_window [class="ncspot"] resize set 70 ppt 70 ppt
 for_window [class="ncspot"] move scratchpad
 for_window [class="ncspot"] border pixel 2.5
 # SHUTDOWN SYSTEM
