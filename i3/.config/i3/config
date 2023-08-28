@@ -44,7 +44,7 @@ bindsym $mod+p [class="pulsemixer"] scratchpad show; move position center
 bindsym $mod+m [class="ncspot"] scratchpad show; move position center
 
 for_window [class="floating"] floating enable
-for_window [class="floating"] resize set 75 ppt 75 ppt
+for_window [class="floating"] resize set 85 ppt 85 ppt
 for_window [class="floating"] move scratchpad
 for_window [class="floating"] border pixel 2.5
 
