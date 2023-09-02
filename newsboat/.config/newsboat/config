@@ -1,5 +1,5 @@
 # Settings
-auto-reload yes
+#auto-reload yes
 browser "xdg-open"
 show-read-feeds no
 
@@ -24,7 +24,8 @@ bind-key U show-urls
 bind-key x pb-delete
 
 # Macros
-macro v set browser "mpv" ; open-in-browser ; set browser "xdg-open"
+macro v set browser "setsid -f mpv --really-quiet --no-terminal" ; open-in-browser ; set browser "xdg-open"
+macro p set browser "setsid -f mpv --really-quiet --no-terminal"; one ; set browser "xdg-open"
 
 # Dracula theme
 # Colors
