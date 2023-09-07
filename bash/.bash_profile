@@ -1,6 +1,6 @@
 # .bash_profile
 
-if [ -f ~/.bashrc ]; then
+if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
 
@@ -14,6 +14,14 @@ fi
 
 if [ -d "$HOME/bin" ] ; then
 	PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "/var/lib/snapd/snap/bin" ] ; then
+	PATH="/var/lib/snapd/snap/bin:$PATH"
+fi
+
+if [ -d "$HOME/go/bin" ] ; then
+	PATH="$HOME/go/bin:$PATH"
 fi
 
 export EXA_COLORS="\
