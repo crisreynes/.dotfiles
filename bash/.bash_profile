@@ -40,3 +40,4 @@ gx=36:\
 tr=34:\
 tw=35:\
 tx=36:"
+export EDITOR="nvim"
