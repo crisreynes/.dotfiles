@@ -22,6 +22,5 @@ set -o vi
 # Binds
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
-bind '"\C-o":"lfcd\C-m"'
 
 neofetch
