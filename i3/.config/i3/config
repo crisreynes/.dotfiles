@@ -234,7 +234,7 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 exec --no-startup-id xdg-user-dirs-update
-exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/current-desktop/*
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/pc/current/*
 exec --no-startup-id setxkbmap -model pc105 -layout us -variant intl -option caps:swapescape
 # exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144.00
 exec --no-startup-id kitty --class pulsemixer pulsemixer
