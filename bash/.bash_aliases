@@ -1,7 +1,7 @@
 # .bash_aliases
 
-alias ls="exa -a --icons --group-directories-first --color=always"
-alias ll="exa -la --icons --group-directories-first --color=always"
+alias ls="eza -a --icons --group-directories-first --color=always"
+alias ll="eza -la --icons --group-directories-first --color=always"
 alias cp="cp -iv"
 alias mv="mv -iv"
 alias rm="rm -vI"
