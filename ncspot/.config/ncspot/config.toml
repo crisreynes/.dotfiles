@@ -42,10 +42,8 @@ hide_display_names = true
 "K" = "shift up 1"
 
 # Volume
-"-" = "voldown 1"
-"=" = "volup 1"
-"[" = "voldown 5"
-"]" = "volup 5"
+"9" = "voldown 5"
+"0" = "volup 5"
 
 # Focus
 "F1" = "focus queue"
