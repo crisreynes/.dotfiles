@@ -126,5 +126,6 @@ map gc cd ~/.dotfiles
 map gC cd ~/.config
 map gs cd ~/.local/bin
 map gv cd ~/Videos
+map gr cd ~/repos
 
 map bg setwallpaper
