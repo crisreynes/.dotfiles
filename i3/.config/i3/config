@@ -122,6 +122,7 @@ for_window [class="ncspot"] border pixel 2.5
 
 # Force apps to open in certain workspaces
 assign [class="Eclipse"] $ws1
+assign [class="jetbrains-idea-ce"] $ws1
 assign [class="Apache NetBeans IDE 18"] $ws1
 assign [class="LibreWolf"] $ws2
 assign [class="firefox"] $ws2
