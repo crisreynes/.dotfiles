@@ -198,7 +198,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id xdg-user-dirs-update
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/pc/current/*
-exec --no-startup-id setxkbmap -model pc105 -layout us -variant altgr-intl
+exec --no-startup-id setxkbmap -model pc105 -layout us
 exec_always --no-startup-id pgrep -f '^kitty --class floating' || kitty --class floating
 exec_always --no-startup-id pgrep -f '^kitty --class pulsemixer' || kitty --class pulsemixer pulsemixer
 exec_always --no-startup-id pgrep -f '^kitty --class ncspot' || kitty --class ncspot ncspot
