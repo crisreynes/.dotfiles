@@ -124,9 +124,10 @@ map gD cd ~/Downloads
 map gp cd ~/Pictures
 map gc cd ~/.dotfiles
 map gC cd ~/.config
-map gs cd ~/.local/bin
+map gs cd ~/bin
 map gv cd ~/Videos
 map gr cd ~/repos
 map gw cd ~/Pictures/wallpapers/pc
+map g/ cd /
 
 map bg setwallpaper
