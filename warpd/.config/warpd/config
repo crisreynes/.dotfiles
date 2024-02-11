@@ -12,7 +12,7 @@ copy_and_exit: c
 accelerator: a
 decelerator: d
 buttons: m , .
-drag_button:
+drag_button: 1
 oneshot_buttons:
 #print: Print the current mouse coordinates to stdout (useful for scripts). (default: p)
 #history: Activate hint history mode while in normal mode. (default: ;)
