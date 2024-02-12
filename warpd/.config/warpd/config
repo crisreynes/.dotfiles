@@ -31,7 +31,7 @@ start: 0
 end: $
 scroll_down: e
 scroll_up: r
-cursor_color: #BD93F9
+cursor_color: #50fa7b
 cursor_size: 7
 #repeat_interval: The number of milliseconds before repeating a movement event. (default: 20)
 #speed: Pointer speed in pixels/second. (default: 220)
