@@ -132,6 +132,7 @@ assign [class="Logseq"] $ws3
 assign [class="Anki"] $ws3
 assign [class="TelegramDesktop"] $ws4
 assign [class="discord"] $ws4
+assign [class="WebCord"] $ws4
 assign [class="Mailspring"] $ws5
 assign [class="VirtualBox Manager"] $ws6
 assign [class="Virt-manager"] $ws6
