@@ -72,8 +72,8 @@ set $ws4 "4 󰍡"
 set $ws5 "5 "
 set $ws6 "6 "
 set $ws7 "7 "
-set $ws8 "8 "
-set $ws9 "9 "
+set $ws8 "8 "
+set $ws9 "9 󰓓"
 set $ws10 "10 "
 
 # switch to workspace
@@ -139,6 +139,9 @@ assign [class="steam"] $ws9
 assign [class="PrismLauncher"] $ws9
 assign [class="mpv"] $ws10
 assign [class="FreeTube"] $ws10
+
+# Force games to open in workspace 8
+assign [class="steam_app_586140"] $ws8
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
