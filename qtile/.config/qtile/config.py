@@ -48,16 +48,17 @@ keys = [
     Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
     Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
     Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+
     # Toggle between split and unsplit sides of stack.
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key(
-        [mod, "shift"],
-        "Return",
-        lazy.layout.toggle_split(),
-        desc="Toggle between split and unsplit sides of stack",
-    ),
+    #Key(
+    #    [mod, "shift"],
+    #    "Return",
+    #    lazy.layout.toggle_split(),
+    #    desc="Toggle between split and unsplit sides of stack",
+    #),
     # Brightness
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
@@ -85,7 +86,6 @@ keys = [
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    #Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 ]
 
 # Add key bindings to switch VTs in Wayland.
@@ -119,11 +119,6 @@ groups = [
     ),
     Group("3", matches=[
             Match(wm_class="soffice"),
-            # Match(wm_class="libreoffice-startcenter|Soffice"),
-            # Match(wm_class="libreoffice-startcenter"),
-            # Match(wm_class="libreoffice-writer"),
-            # Match(wm_class="libreoffice"),
-            # Match(wm_class="LibreOffice"),
             Match(wm_class="Logseq"),
             Match(wm_class="Anki")
         ]
@@ -154,22 +149,7 @@ groups = [
             Match(wm_class="mpv"),
             Match(wm_class="FreeTube")
         ]
-    )#,
-    # ScratchPad("F11", [
-    #         DropDown("term", "kitty", opacity=0.8)#,
-    #         # define another terminal exclusively for ``qtile shell` at different position
-    #     #     DropDown("music", "kitty -e ncspot",
-    #     #             x=0.05, y=0.4, width=0.9, height=0.6, opacity=0.9,
-    #     #             on_focus_lost_hide=True)
-    #      ]
-    # ),
-    # ScratchPad("F12", [
-    #         DropDown("music", "kitty -e ncspot",
-    #                 x=0.05, y=0.4, width=0.9, height=0.6, opacity=0.9,
-    #                 on_focus_lost_hide=True)
-    #         ]
-    # )
-
+    )
 ]
 
 
@@ -206,19 +186,11 @@ groups.append(
             DropDown("term", "kitty",
                      width=0.9, height=0.85,  x=0.05, y=0.07,opacity=1.0,
                      on_focus_lost_hide=True),
-            # define another terminal exclusively for ``qtile shell` at different position
             DropDown("music", "kitty ncspot",
                     width=0.9, height=0.85, x=0.05, y=0.07, opacity=1.0,
                     on_focus_lost_hide=True)
             ]
-    )#,
-    # ScratchPad("", [
-    #         DropDown("music", "kitty -e ncspot",
-    #                 x=0.05, y=0.4, width=0.9, height=0.6, opacity=0.9,
-    #                 on_focus_lost_hide=True)
-    #         ]
-    # )
-
+    )
 )
 
 layouts = [
