@@ -65,7 +65,7 @@ keys = [
     # Launch programs
     Key([mod, "shift"], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
-    Key([mod], "v", lazy.spawn(terminal + " nvim"), desc="Launch nvim"),
+    Key([mod], "v", lazy.group["scratchpad"].dropdown_toggle("pulsemixer")),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Launch rofi"),
     KeyChord([mod], "p", [
         Key([], "f", lazy.spawn("flameshot full --path " + home + "/Pictures/screenshots/")),
@@ -181,10 +181,13 @@ for i in groups:
 
 groups.append(
     ScratchPad("scratchpad", [
-            DropDown("term", "kitty",
+            DropDown("term", terminal,
                      width=0.9, height=0.8,  x=0.05, y=0.09, opacity=1.0,
                      on_focus_lost_hide=True),
-            DropDown("music", "kitty ncspot",
+            DropDown("music", terminal + "ncspot",
+                    width=0.9, height=0.8, x=0.05, y=0.09, opacity=1.0,
+                    on_focus_lost_hide=True),
+            DropDown("pulsemixer", terminal + " pulsemixer",
                     width=0.9, height=0.8, x=0.05, y=0.09, opacity=1.0,
                     on_focus_lost_hide=True)
             ]
