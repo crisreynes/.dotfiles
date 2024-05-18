@@ -182,10 +182,10 @@ for i in groups:
 groups.append(
     ScratchPad("scratchpad", [
             DropDown("term", "kitty",
-                     width=0.9, height=0.85,  x=0.05, y=0.065, opacity=1.0,
+                     width=0.9, height=0.8,  x=0.05, y=0.09, opacity=1.0,
                      on_focus_lost_hide=True),
             DropDown("music", "kitty ncspot",
-                    width=0.9, height=0.85, x=0.05, y=0.065, opacity=1.0,
+                    width=0.9, height=0.8, x=0.05, y=0.09, opacity=1.0,
                     on_focus_lost_hide=True)
             ]
     )
