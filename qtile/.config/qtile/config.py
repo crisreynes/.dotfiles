@@ -237,7 +237,7 @@ screens = [
                 #widget.Battery(),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Clock(foreground=colors[2], format="%Y-%m-%d %a %I:%M %p"),
+                widget.Clock(foreground=colors[2], format="%Y-%m-%d %a %H:%M"),
             ],
             24,
             background=colors[0]
