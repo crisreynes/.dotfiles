@@ -229,10 +229,8 @@ screens = [
             [
                 widget.CurrentLayoutIcon(),
                 widget.Sep(foreground=colors[3]),
-                widget.GroupBox(active=colors[2], inactive=colors[1],block_highlight_text_color=colors[5], highlight_method="line", highlight_color=colors[7], urgent_border=colors[9]),
-                widget.Sep(foreground=colors[3]),
-                widget.WindowName(foreground=colors[4]),
-                widget.Sep(foreground=colors[3]),
+                widget.GroupBox(this_current_screen_border=colors[8], active=colors[2], inactive=colors[1],block_highlight_text_color=colors[10], highlight_method="block", urgent_border=colors[9]),
+                widget.WindowName(background=colors[1], foreground=colors[5]),
                 widget.Systray(),
                 widget.Sep(foreground=colors[3]),
                 #widget.Battery(),
@@ -303,4 +301,4 @@ wl_input_rules = None
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-wmname = "LG3D"
+wmname = "Qtile"
