@@ -67,7 +67,6 @@ keys = [
     Key([mod, "shift"], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
     Key([mod], "e", lazy.spawn(emacs), desc="Launch emacs"),
-    Key([mod], "v", lazy.group["scratchpad"].dropdown_toggle("pulsemixer")),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Launch rofi"),
     KeyChord([mod], "p", [
         Key([], "f", lazy.spawn("flameshot full --path " + home + "/Pictures/screenshots/")),
@@ -76,6 +75,7 @@ keys = [
     #ScratchPad
     Key([mod], "Return", lazy.group["scratchpad"].dropdown_toggle("term")),
     Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("music")),
+    Key([mod], "v", lazy.group["scratchpad"].dropdown_toggle("pulsemixer")),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
