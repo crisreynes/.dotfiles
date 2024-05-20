@@ -196,14 +196,16 @@ groups.append(
     )
 )
 
+layout_theme = {
+    "margin": 6,
+    "border_normal": colors[0],
+    "border_focus": colors[5],
+    "border_width": 2
+}
+
 layouts = [
-    layout.MonadTall(
-        border_normal=colors[0],
-        border_focus=colors[5],
-        border_width=2,
-        margin=6,
-    ),
-    layout.Max(),
+    layout.MonadTall(**layout_theme),
+    layout.Max(**layout_theme)
     #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
