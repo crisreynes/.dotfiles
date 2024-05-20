@@ -24,6 +24,10 @@ if [ -d "$HOME/go/bin" ] ; then
 	PATH="$HOME/go/bin:$PATH"
 fi
 
+if [ -d "$HOME/.config/emacs/bin" ] ; then
+	PATH="$HOME/.config/emacs/bin:$PATH"
+fi
+
 export EXA_COLORS="\
 uu=36:\
 gu=37:\
