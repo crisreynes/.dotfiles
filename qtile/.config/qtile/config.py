@@ -9,6 +9,7 @@ mod = "mod4"
 terminal = "kitty"
 browser = "flatpak run io.gitlab.librewolf-community"
 home = str(Path.home())
+emacs = "emacsclient -c -a 'emacs'"
 
 
 # dracula colors
@@ -65,6 +66,7 @@ keys = [
     # Launch programs
     Key([mod, "shift"], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
+    Key([mod], "e", lazy.spawn(emacs), desc="Launch emacs"),
     Key([mod], "v", lazy.group["scratchpad"].dropdown_toggle("pulsemixer")),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Launch rofi"),
     KeyChord([mod], "p", [
