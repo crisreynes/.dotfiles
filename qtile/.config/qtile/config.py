@@ -202,8 +202,6 @@ layouts = [
         border_focus=colors[5],
         border_width=2,
         margin=6,
-        single_border_width=0,
-        single_margin=0
     ),
     layout.Max(),
     #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
