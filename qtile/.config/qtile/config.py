@@ -237,7 +237,7 @@ screens = [
                 widget.WindowName(background=colors[1], foreground=colors[5]),
                 widget.Systray(),
                 widget.Sep(foreground=colors[3]),
-                widget.Battery() if os.environ.get('QTILE_DEVICE_TYPE', 'DESKTOP') == 'LAPTOP' else widget.CPU(),
+                widget.Battery(discharge_char='v', foreground=colors[2], format="{char} {percent:2.0%}", low_background=colors[10], low_foreground=colors[9], low_percentage=0.2) if os.environ.get('QTILE_DEVICE_TYPE', 'DESKTOP') == 'LAPTOP' else widget.CPU(),
                 widget.Sep(foreground=colors[3]),
                 #widget.Battery(),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
