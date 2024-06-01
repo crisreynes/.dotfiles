@@ -230,9 +230,10 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayoutIcon(),
-                widget.Sep(foreground=colors[3]),
                 widget.GroupBox(this_current_screen_border=colors[8], active=colors[2], inactive=colors[1], block_highlight_text_color=colors[10], highlight_method="block", urgent_border=colors[9]),
+                widget.Sep(foreground=colors[3]),
+                widget.CurrentLayoutIcon(foreground=colors[2]),
+                widget.CurrentLayout(width=64, foreground=colors[2], scroll=True, scroll_clear=True, scroll_delay=0.5, scroll_fixed_width=True, scroll_step=3),
                 widget.WindowName(background=colors[1], foreground=colors[5]),
                 widget.Systray(),
                 widget.Sep(foreground=colors[3]),
