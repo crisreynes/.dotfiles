@@ -1,6 +1,6 @@
 default_keybindings = false
 use_nerdfont = true
-notify = true
+notify = false
 flip_status_indicators = true
 hide_display_names = true
 
