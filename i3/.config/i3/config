@@ -142,8 +142,7 @@ assign [class="mpv"] $ws10
 assign [class="FreeTube"] $ws10
 
 # Force games to open in workspace 8
-for_window [class="steam_app_586140"] move to workspace $ws8
-for_window [class="steam_app_1145350"] move to workspace $ws8
+for_window [class="steam_app_\d+"] move to workspace $ws8
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
