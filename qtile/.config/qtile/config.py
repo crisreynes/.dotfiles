@@ -108,7 +108,8 @@ for vt in range(1, 8):
 groups = [
 
     Group("1", matches=[
-            Match(wm_class="Eclipse")
+            Match(wm_class="Eclipse"),
+            Match(wm_class="jetbrains-idea-ce")
         ]
     ),
     Group("2", matches=[
