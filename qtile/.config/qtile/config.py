@@ -76,6 +76,12 @@ keys = [
     Key([mod], "Return", lazy.group["scratchpad"].dropdown_toggle("term")),
     Key([mod], "m", lazy.group["scratchpad"].dropdown_toggle("music")),
     Key([mod], "v", lazy.group["scratchpad"].dropdown_toggle("pulsemixer")),
+    # Power
+    KeyChord([mod], "x", [
+        Key([], "s", lazy.spawn("shutdown now")),
+        Key([], "r", lazy.spawn("reboot"))
+    ]),
+
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
