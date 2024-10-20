@@ -103,7 +103,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Scratchpads
 bindsym $mod+Return [class="floating"] scratchpad show; move position center
 bindsym $mod+p [class="pulsemixer"] scratchpad show; move position center
-bindsym $mod+m [class="ncspot"] scratchpad show; move position center
+bindsym $mod+m [class="cmus"] scratchpad show; move position center
 
 for_window [class="floating"] floating enable
 for_window [class="floating"] resize set 85 ppt 85 ppt
@@ -115,10 +115,10 @@ for_window [class="pulsemixer"] resize set 60 ppt 60 ppt
 for_window [class="pulsemixer"] move scratchpad
 for_window [class="pulsemixer"] border pixel 2.5
 
-for_window [class="ncspot"] floating enable
-for_window [class="ncspot"] resize set 70 ppt 70 ppt
-for_window [class="ncspot"] move scratchpad
-for_window [class="ncspot"] border pixel 2.5
+for_window [class="cmus"] floating enable
+for_window [class="cmus"] resize set 70 ppt 70 ppt
+for_window [class="cmus"] move scratchpad
+for_window [class="cmus"] border pixel 2.5
 
 # Force apps to open in certain workspaces
 assign [class="Eclipse"] $ws1
@@ -205,4 +205,4 @@ exec --no-startup-id feh --randomize --bg-fill ~/Pictures/wallpapers/pc/current/
 exec --no-startup-id setxkbmap -model pc105 -layout us
 exec_always --no-startup-id pgrep -f '^kitty --class floating' || kitty --class floating
 exec_always --no-startup-id pgrep -f '^kitty --class pulsemixer' || kitty --class pulsemixer pulsemixer
-exec_always --no-startup-id pgrep -f '^kitty --class ncspot' || kitty --class ncspot ncspot
+exec_always --no-startup-id pgrep -f '^kitty --class cmus' || kitty --class cmus cmus

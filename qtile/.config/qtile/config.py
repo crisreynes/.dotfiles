@@ -193,7 +193,7 @@ groups.append(
             DropDown("term", terminal,
                      width=0.9, height=0.8,  x=0.05, y=0.09, opacity=1.0,
                      on_focus_lost_hide=True),
-            DropDown("music", terminal + " ncspot",
+            DropDown("music", terminal + " cmus",
                     width=0.9, height=0.8, x=0.05, y=0.09, opacity=1.0,
                     on_focus_lost_hide=True),
             DropDown("pulsemixer", terminal + " pulsemixer",
