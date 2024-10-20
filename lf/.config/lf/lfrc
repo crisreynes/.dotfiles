@@ -126,6 +126,7 @@ map gc cd ~/.dotfiles
 map gC cd ~/.config
 map gs cd ~/bin
 map gv cd ~/Videos
+map gm cd ~/Music
 map gr cd ~/repos
 map gw cd ~/Pictures/wallpapers/pc
 map g/ cd /
