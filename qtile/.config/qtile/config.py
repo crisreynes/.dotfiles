@@ -122,7 +122,7 @@ groups = [
             Match(wm_class="LibreWolf"),
             Match(wm_class="firefox"),
             Match(wm_class="Chromium-browser")
-        ]
+        ], layout="max"
     ),
     Group("3", matches=[
             Match(wm_class="soffice"),
@@ -134,7 +134,7 @@ groups = [
             Match(wm_class="TelegramDesktop"),
             Match(wm_class="discord"),
             Match(wm_class="WebCord")
-        ]
+        ], layout="max"
     ),
     Group("5", matches=[
             Match(wm_class="Mailspring")
@@ -155,7 +155,7 @@ groups = [
     Group("0", matches=[
             Match(wm_class="mpv"),
             Match(wm_class="FreeTube")
-        ]
+        ], layout="max"
     )
 ]
 
