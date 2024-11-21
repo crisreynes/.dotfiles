@@ -45,3 +45,5 @@ tr=34:\
 tw=35:\
 tx=36:"
 export EDITOR="nvim"
+export MANPAGER="nvim +Man!"
+export MANWIDTH=999
