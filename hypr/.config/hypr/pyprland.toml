@@ -1,0 +1,28 @@
+[pyprland]
+plugins = [
+    "scratchpads"
+]
+
+[scratchpads.term]
+pinned = false
+animation = "fromTop"
+command = "kitty --class floating"
+class = "floating"
+size = "85% 85%"
+unfocus = "hide"
+
+[scratchpads.music]
+pinned = false
+animation = "fromBottom"
+command = "kitty --class cmus cmus"
+class = "cmus"
+size = "85% 85%"
+unfocus = "hide"
+
+[scratchpads.volume]
+pinned = false
+animation = "fromBottom"
+command = "kitty --class pulsemixer pulsemixer"
+class = "pulsemixer"
+size = "85% 85%"
+unfocus = "hide"
