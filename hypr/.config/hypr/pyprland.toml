@@ -5,7 +5,7 @@ plugins = [
 
 [scratchpads.term]
 pinned = false
-animation = "fromTop"
+animation = "fromBottom"
 command = "kitty --class floating"
 class = "floating"
 size = "85% 85%"
