@@ -20,10 +20,10 @@ hint: x
 hint2: X
 grid: g
 screen:
-left: h
-down: j
-up: k
-right: l
+left: Left
+down: Down
+up: Up
+right: Right
 top: H
 middle: M
 bottom: L
