@@ -120,7 +120,7 @@ groups = [
     ),
     Group("2", matches=[
             Match(wm_class="LibreWolf"),
-            Match(wm_class="firefox"),
+            Match(wm_class="org.mozilla.firefox"),
             Match(wm_class="Chromium-browser")
         ], layout="max"
     ),
@@ -145,7 +145,10 @@ groups = [
             Match(wm_class="Virt-manager")
         ]
     ),
-    Group("7"),
+    Group("7", matches=[
+            Match(wm_class="qBittorrent")
+        ]
+    ),
     Group("8"),
     Group("9", matches=[
             Match(wm_class="steam"),
