@@ -115,7 +115,8 @@ groups = [
 
     Group("1", matches=[
             Match(wm_class="Eclipse"),
-            Match(wm_class="jetbrains-idea-ce")
+            Match(wm_class="jetbrains-idea-ce"),
+            Match(wm_class="VSCodium")
         ]
     ),
     Group("2", matches=[
