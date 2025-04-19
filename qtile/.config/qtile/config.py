@@ -66,11 +66,16 @@ keys = [
     # Launch programs
     Key([mod, "shift"], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
-    Key([mod], "e", lazy.spawn(emacs), desc="Launch emacs"),
+    Key([mod], "e", lazy.spawn("rofi -modi emoji -show emoji"), desc="Launch rofi-emoji"),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Launch rofi"),
     KeyChord([mod], "p", [
-        Key([], "f", lazy.spawn("flameshot full --path " + home + "/Pictures/screenshots/")),
-        Key([], "s", lazy.spawn("flameshot gui --path " + home + "/Pictures/screenshots/"))
+        KeyChord([], "f", [
+            Key([], "f", lazy.spawn("flameshot full --path " + home + "/Pictures/screenshots/")),
+            Key([], "s", lazy.spawn("flameshot gui --path " + home + "/Pictures/screenshots/")),
+        ]),
+        Key([], "e", lazy.spawn(emacs), desc="Launch emacs"),
+        # picom
+        Key([], "p", lazy.spawn("toggle-picom.sh"), desc= "Toggle transparency")
     ]),
     #ScratchPad
     Key([mod], "Return", lazy.group["scratchpad"].dropdown_toggle("term")),
