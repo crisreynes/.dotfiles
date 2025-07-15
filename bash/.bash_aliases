@@ -24,3 +24,9 @@ alias gl="git pull"
 alias gm="git merge"
 alias gr="git remote"
 alias gra="git remote add"
+alias scrcpy="scrcpy  --shortcut-mod=lalt --video-codec=h265 -m1920 --max-fps=60 --screen-off-timeout=300 -S -t"
+
+alias icat="kitten icat"
+db64() {
+	echo "$1" | base64 -d; echo
+}
