@@ -125,7 +125,7 @@ groups = [
         ]
     ),
     Group("2", matches=[
-            Match(wm_class="LibreWolf"),
+            Match(wm_class="librewolf"),
             Match(wm_class="org.mozilla.firefox"),
             Match(wm_class="Chromium-browser")
         ], layout="max"
