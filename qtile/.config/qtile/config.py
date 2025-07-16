@@ -66,7 +66,7 @@ keys = [
     # Launch programs
     Key([mod, "shift"], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "b", lazy.spawn(browser), desc="Launch browser"),
-    Key([mod], "e", lazy.spawn("rofi -modi emoji -show emoji"), desc="Launch rofi-emoji"),
+    Key([mod], "e", lazy.spawn("rofi -modi \"emoji:rofimoji\" -show emoji"), desc="Launch rofimoji"),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Launch rofi"),
     KeyChord([mod], "p", [
         KeyChord([], "f", [
