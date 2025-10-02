@@ -48,6 +48,10 @@ tooltip label {
     background-color: @comment;
 }
 
+#custom-music {
+    color: @pink;
+}
+
 #battery.charging {
     color: @green;
 }
