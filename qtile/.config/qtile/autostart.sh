@@ -6,3 +6,4 @@ setxkbmap -model pc105 -layout us
 # xrandr --rate 144
 picom -b &
 /usr/bin/emacs --daemon &
+playerctld daemon &

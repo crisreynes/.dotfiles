@@ -13,6 +13,7 @@
         "hyprland/window"
     ],
     "modules-right": [
+        "custom/music",
         "tray",
         "idle_inhibitor",
         "cpu",
@@ -61,8 +62,13 @@
         "format-icons": ["", "", "", "", ""]
     },
     "custom/clock": {
-    "exec": "date +\"%Y-%m-%d %a %H:%M\"",
-    "format": "{}",
-    "interval": 10
-  }
+        "exec": "date +\"%Y-%m-%d %a %H:%M\"",
+        "format": "{}",
+        "interval": 10
+    },
+    "custom/music": {
+        "exec": "playerctl metadata --ignore-player=chromium,firefox --format \"{{artist}} - {{title}}\" | awk '{if(length > 32) print substr($0, 1, 29) \"...\"; else print $0}'",
+        "format": "{}",
+        "interval": 1
+    }
 }

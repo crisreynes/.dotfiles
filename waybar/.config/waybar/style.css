@@ -40,12 +40,16 @@ tooltip label {
 	color: @green;
 }
 
-#custom-clock, #battery {
+#custom-clock, #custom-music, #battery {
     padding: 0 10px;
 }
 
 #custom-clock {
     background-color: @comment;
+}
+
+#custom-music {
+    color: @pink;
 }
 
 #battery.charging {
