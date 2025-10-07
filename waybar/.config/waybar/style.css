@@ -9,7 +9,6 @@
 
 window#waybar {
     background: @background;
-    border-bottom: 3px solid @background-darker;
     color: @foreground;
 }
 
@@ -42,6 +41,10 @@ tooltip label {
 
 #custom-clock, #custom-music, #battery {
     padding: 0 10px;
+}
+
+#battery {
+    background: @background;
 }
 
 #custom-clock {
