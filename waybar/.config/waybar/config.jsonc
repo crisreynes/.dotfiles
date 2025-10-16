@@ -69,6 +69,7 @@
     "custom/music": {
         "exec": "playerctl metadata --ignore-player=brave,chromium,firefox --format \"{{artist}} - {{title}}\" | awk '{if(length > 32) print substr($0, 1, 29) \"...\"; else print $0}'",
         "format": "{}",
-        "interval": 1
+        "interval": 1,
+        "escape": true
     }
 }
